@@ -1,6 +1,6 @@
 ## Дз № 1 
 
-#### Файлы `mapper.py` и `reducer.py` в соответствующих папках:
+#### Файлы `mapper.py` и `reducer.py` в соответствующих папках `mapReduce`:
 
 * `mapReduceMean` - для расчета среднего
 * `mapReduceVar` - для расчета дисперсии
