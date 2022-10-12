@@ -1,11 +1,11 @@
 ## Дз № 1 
 
-# Файлы `mapper.py` и `reducer.py` в соответствующих папках:
+#### Файлы `mapper.py` и `reducer.py` в соответствующих папках:
 
 * `mapReduceMean` - для расчета среднего
 * `mapReduceVar` - для расчета дисперсии
 
-# Файл `Results.txt` - сравнение стандартных методов и mapReduce
+#### Файл `Results.txt` - сравнение стандартных методов и mapReduce
  
 Запуск mapReduce запускался с помощью Hadoop Streaming командой: 
 
