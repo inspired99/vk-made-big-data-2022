@@ -16,7 +16,7 @@ def main():
         chunk_size += 1
         mean += price
 
-    if mean:
+    if chunk_size:
         mean /= chunk_size
 
     print(chunk_size, '\t', mean)

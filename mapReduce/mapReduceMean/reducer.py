@@ -14,7 +14,7 @@ def main():
         total_chunk_size += chunk_size
 
     total_mean = 0
-    if total_sum:
+    if total_chunk_size:
         total_mean = total_sum / total_chunk_size
     print(total_mean)
 

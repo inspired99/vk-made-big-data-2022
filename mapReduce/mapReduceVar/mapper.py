@@ -19,12 +19,13 @@ def main():
         chunk_size += 1
         mean += price
 
-    mean /= chunk_size
+    if chunk_size:
+        mean /= chunk_size
 
-    for price in prices:
-        var += (price - mean) ** 2
+        for price in prices:
+            var += (price - mean) ** 2
 
-    var /= chunk_size
+        var /= chunk_size
     print(chunk_size, '\t', mean, '\t', var)
 
 
