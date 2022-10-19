@@ -3,7 +3,6 @@ version: "3"
 services:
   namenode:
     image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
-
     container_name: namenode
     restart: always
     ports:
@@ -18,7 +17,6 @@ services:
 
   datanode1:
     image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
-
     container_name: datanode1
     restart: always
     volumes:
@@ -52,7 +50,6 @@ services:
   
   resourcemanager:
     image: bde2020/hadoop-resourcemanager:2.0.0-hadoop3.2.1-java8
-
     container_name: resourcemanager
     restart: always
     ports:
@@ -76,7 +73,6 @@ services:
   
   historyserver:
     image: bde2020/hadoop-historyserver:2.0.0-hadoop3.2.1-java8
-
     container_name: historyserver
     restart: always
     environment:
