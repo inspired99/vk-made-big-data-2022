@@ -1,0 +1,17 @@
+Standart methods (pandas):
+
+Mean: 
+152.7206871868289
+Variance: 
+57674.02524696099
+
+-----------------------------------------------------------
+MapReduce with Hadoop:
+
+root@d62659408683:/# hadoop fs -cat /outa/part-00000
+2022-10-12 16:35:15,702 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+152.7207632838385
+
+root@d62659408683:/# hadoop fs -cat /out1/part-00000
+2022-10-12 16:22:59,786 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+57674.02496382212

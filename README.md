@@ -1,3 +1,17 @@
- # Big Data
+## Дз № 1 
+
+#### Файлы `mapper.py` и `reducer.py` в соответствующих папках `mapReduce`:
+
+* `mapReduceMean` - для расчета среднего
+* `mapReduceVar` - для расчета дисперсии
+
+#### Файл `mapReduce_pandas.ipynb` - маленький ноутбук с подсчетом среднего и дисперсии стандартным способом
+
+#### Файл `Results.txt` - сравнение стандартных методов и mapReduce
  
- Repository for HomeWorks at VK MADE Big Data Course in Spring 2022.
+Запуск mapReduce осуществлялся с помощью Hadoop Streaming командой: 
+
+`hadoop jar /opt/hadoop-3.2.1/share/hadoop/tools/lib/hadoop-streaming-3.2.1.jar -file /mapReduceVar/mapper.py -mapper "python3 mapper.py" -file /mapReduceVar/reducer.py -reducer "python3 reducer.py" -input /mapReduceVar/AB_NYC_2019.csv -output /output
+`
+
+Также добавлен файл ```docker-compose.yml``` в папку mapReduce.
